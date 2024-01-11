@@ -24,7 +24,7 @@ const Body = () => {
 
   return (
     <div className="bg-[#F0F0F0] h-max " >
-      <div className="flex flex-wrap  ">
+      <div className="flex flex-wrap">
         {products.map((item,index) => (
           <ProductItem item={item} key={index} /> 
         ))}

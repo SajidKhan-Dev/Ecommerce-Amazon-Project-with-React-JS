@@ -38,7 +38,7 @@ const ProductItem = ({ item }) => {
   }
 
   return (
-    <div className='flex gap-3 flex-col bg-white m-3 w-[300px] h-[380px] p-3'>
+    <div className='flex gap-3 flex-col bg-white m-10 w-[300px] h-[380px] p-3'>
       <img className="ml-auto mr-auto w-[200px] h-[200px]" src={item.image} alt="product image" />
       <p>{item.title.length > 25 ? item.title.substr(0, 25) + '...' : item.title}</p>
       <p>{generateStars(item.rating.rate)} <span>{item.rating.count}</span></p>
