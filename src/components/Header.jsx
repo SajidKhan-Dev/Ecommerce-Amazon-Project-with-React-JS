@@ -22,10 +22,11 @@ const Header = () => {
 
   return (
     <>
-      <div className="header  gap-5 flex items-center  bg-[#0F1111]  p-[12px]">
+    {/* first nav in mobile first row logo and right side cart and signin and profileicon and second row seachbar  */}
+       <div className="overflow-x-auto  gap-5 flex items-center  bg-[#0F1111]  p-[12px]">
         <div onClick={navigateToHome} className="px-[8px] py-[7px] hover:border-white hover:border-solid hover:border cursor-pointer">
           <img
-            className="w-[120px] h-[40px]"
+            className="min-w-[150px] sm:w-10  w-[150px] h-[40px]"
             src="https://th.bing.com/th/id/R.e86d8267975822e2f702c16c9c149e37?rik=vSqltwMTDsTbxg&riu=http%3a%2f%2fwww.bizmonthly.com%2fwp-content%2fuploads%2f2020%2f04%2famazon-logo-black.png&ehk=Ffc4jD16P4sohdWSrk%2bC9y5lDgYcvATKVJfYzCM2YPc%3d&risl=&pid=ImgRaw&r=0"
             alt="amazon logo"
           />
@@ -87,7 +88,6 @@ const Header = () => {
           </div>
           <ArrowDropDownOutlinedIcon className="text-white" />
         </div>
-
         <div onClick={navigateToCart}  className="cursor-pointer relative px-[14px] py-[14px] hover:border-white hover:border-solid hover:border flex">
           <ShoppingCartIcon className="text-white " />
           <span className=" text-[10px]  absolute left-[25px] right-[20px] bg-white w-[14px] h-[14px]  border rounded-[7px] text-center">
@@ -98,41 +98,44 @@ const Header = () => {
           </p>
         </div>
       </div>
-      <div onClick={navigateToHome} className="bg-[#232F3E] h-[39px] flex gap-5 items-center cursor-pointer">
-        <p className="px-[8px] py-[7px] ml-5 text-white h-[30px] w-auto hover:border-white hover:border-solid hover:border flex items-center">
-          <MenuIcon className="text-white" /> All{" "}
-        </p>
-        <p className=" text-white px-[8px] py-[7px] h-[30px] w-auto  hover:border-white hover:border-solid hover:border flex items-center">
-          Medical Care
-          <ArrowDropDownOutlinedIcon />
-        </p>
-        <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border flex items-center">
-          Groceries
-          <ArrowDropDownOutlinedIcon />
-        </p>
-        <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border">
-          Best Sellers
-        </p>
-        <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border">
-          Amazon Basics
-        </p>
-        <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border">
-          Today's Deals
-        </p>
-        <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border">
-          Registry
-        </p>
-        <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border">
-          New Releases
-        </p>
-        <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border flex items-center">
-          Prime
-          <ArrowDropDownOutlinedIcon />
-        </p>
-        <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border flex items-center">
-          Customer Service
-        </p>
-      </div>
+
+      {/* Second nav in mobile scrolling */}
+<div onClick={navigateToHome} className="overflow-x-auto bg-[#232F3E] h-[45px] flex gap-5 items-center cursor-pointer">
+  <p className="px-[8px] py-[7px] ml-5 text-white h-[30px] w-auto hover:border-white hover:border-solid hover:border flex items-center">
+    <MenuIcon className="text-white" /> All{" "}
+  </p>
+  <p className="text-white px-[8px] py-[7px] h-[30px] w-auto  hover:border-white hover:border-solid hover:border flex items-center">
+    Medical Care
+    <ArrowDropDownOutlinedIcon />
+  </p>
+  <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border flex items-center">
+    Groceries
+    <ArrowDropDownOutlinedIcon />
+  </p>
+  <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border">
+    Best Sellers
+  </p>
+  <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border">
+    Amazon Basics
+  </p>
+  <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border">
+    Today's Deals
+  </p>
+  <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border">
+    Registry
+  </p>
+  <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border">
+    New Releases
+  </p>
+  <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border flex items-center">
+    Prime
+    <ArrowDropDownOutlinedIcon />
+  </p>
+  <p className="text-white px-[8px] py-[7px] h-[30px] w-auto hover:border-white hover:border-solid hover:border flex items-center">
+    Customer Service
+  </p>
+</div>
+
     </>
   );
 };

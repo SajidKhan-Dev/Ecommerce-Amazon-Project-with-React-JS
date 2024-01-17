@@ -86,6 +86,8 @@ const Cart = () => {
     <>
       <Header />
       <div className="flex cart Cart bg-gray-200">
+
+      
         {/* left cart */}
         <div className="flex-initial bg-white w-[70%] m-4 p-3 ">
           <h1 className="border-b font-bold text-3xl border-gray-300 py-[20px]">

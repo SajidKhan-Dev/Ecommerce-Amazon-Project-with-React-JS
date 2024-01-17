@@ -4,8 +4,10 @@ import { useSelector } from "react-redux";
 
 const Body = () => {
   
-  const [products, setProducts] = useState([]);
   const cart = useSelector((state) => state.cart.cart);
+  
+  const [products, setProducts] = useState([]);
+ 
   console.log(cart);
  
   useEffect(() => {
